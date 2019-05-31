@@ -1,0 +1,27 @@
+ <!DOCTYPE html>
+<html>
+	<title>captcha breaker</title>
+	<head>
+		<link rel="stylesheet" href="main.css">
+		<script type="text/javascript" src="main.js"></script>
+	</head>
+	<body background="back.jpg" text="white">
+		<div class="w3-container">
+  		<p class="w3-center w3-animate-bottom" style="font-family: Times New Roman" align="center"><font size="+80">Here is the <b>Captcha Breaker</font></b></p>
+		</div>
+	
+
+	<body> <!-- As the body loads, the function runs and Captcha is loaded. -->
+		<!-- it will not be downloaded only after clicking on the 
+			load button rather than changing everytime if you load the button -->
+		<button id="loadpage" onclick="ChangeCaptcha()">Load the Captcha</button>
+		<br><br>
+		<input type="text" id="randomfield"> <!-- Change this ID to the desired one, be sure to change it in the CSS and JS files too -->
+		<br><br>
+		<input id="CaptchaEnter" maxlength="4" /> <!-- Change maxlength to the size you wanted your Captcha to be -->
+		<br><br>
+		<button onclick="check()">Done</button> <!-- The function is executed when the user presses this button -->
+	</body>
+
+</html>
+
